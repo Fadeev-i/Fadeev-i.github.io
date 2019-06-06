@@ -102,6 +102,7 @@ a {
   font-family: 'Circe-Regular';
   font-size: 4rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .centerTitle__wrapper {
@@ -210,6 +211,27 @@ a {
   background: #fff;
 }
 
+@media screen and (max-width: 1110px) {
+  .slogan {
+    width: 100%;
+    background: #fff;
+    margin-left: 10%;
+  }
+  .slogan-title {
+    font-size: 1.5rem!important;
+  }
+
+}
+
+
+@media screen and (max-width: 660px) {
+  .slogan-title {
+  display:none;
+  }
+  .top-nav {
+      margin-top: 80px;
+  }
+}
 
 .slogan-title {
   margin-left: 150px;
@@ -531,9 +553,21 @@ z-index: 1;
 background-image: url(../assets/images/projects/chast-getsby/19.04-min.jpg);
 z-index: 1;
 }
-.mainPhon .mainPhon__image10 span {
-background-image: url(../assets/images/projects/chast-getsby/19.04-min.jpg);
+.mainPhon .mainPhon__image11 span {
+background-image: url(../assets/images/projects/biblio-night/12.3-min.jpeg);
 z-index: 1;
+}
+.mainPhon .mainPhon__image12 span {
+background-image: url(../assets/images/projects/ideisk/12.45.2-min.jpg);
+ z-index: 1;
+}
+.mainPhon .mainPhon__image13 span {
+background-image: url(../assets/images/projects/orkestr/12.8-min.jpg);
+ z-index: 1;
+}
+.mainPhon .mainPhon__image14 span {
+background-image: url(../assets/images/projects/fleshmob/17.89-min.jpg);
+ z-index: 1;
 }
 
 /* Animation for the slideshow images */
@@ -610,12 +644,16 @@ z-index: 1;
 
 .mainTetx {
   margin-top: 5%;
-  width: 70%;
+  width: 30%;
   font-size: 1.5rem;
   font-family: "Roboto";
   line-height: 2.7rem;
-  text-align: justify;
+
   color: #383737;
+}
+
+.mainText ul {
+  text-align: left!important;
 }
 
 .item-list {
@@ -709,7 +747,16 @@ z-index: 1;
 .projects-link:hover .projects-image__3,
 .projects-link:hover .projects-image__4,
 .projects-link:hover .projects-image__5,
-.projects-link:hover .projects-image__6 {
+.projects-link:hover .projects-image__6,
+.projects-link:hover .projects-image__7,
+.projects-link:hover .projects-image__8,
+.projects-link:hover .projects-image__9,
+.projects-link:hover .projects-image__10,
+.projects-link:hover .projects-image__11,
+.projects-link:hover .projects-image__12,
+.projects-link:hover .projects-image__13,
+.projects-link:hover .projects-image__14
+ {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -722,11 +769,19 @@ z-index: 1;
 @media screen and (max-width: 768px) {
   .projects-link:hover .portfolio__image-desctop, 
   .projects-link:hover .projects-image__1,
-  .projects-link:hover .projects-image__2,
-  .projects-link:hover .projects-image__3,
-  .projects-link:hover .projects-image__4,
-  .projects-link:hover .projects-image__5,
-  .projects-link:hover .projects-image__6 {
+.projects-link:hover .projects-image__2,
+.projects-link:hover .projects-image__3,
+.projects-link:hover .projects-image__4,
+.projects-link:hover .projects-image__5,
+.projects-link:hover .projects-image__6,
+.projects-link:hover .projects-image__7,
+.projects-link:hover .projects-image__8,
+.projects-link:hover .projects-image__9,
+.projects-link:hover .projects-image__10,
+.projects-link:hover .projects-image__11,
+.projects-link:hover .projects-image__12,
+.projects-link:hover .projects-image__13,
+.projects-link:hover .projects-image__14 {
     -ms-transform: none;
     -webkit-transform: none;
             transform: none;
@@ -763,9 +818,19 @@ z-index: 1;
  .projects-image__10 {
    background-image: url(../assets/images/projects/tm-domino-principle/22.17.06-min.jpg);
  }
+ .projects-image__11 {
+   background-image: url(../assets/images/projects/biblio-night/12.3-min.jpeg);
+ }
+ .projects-image__12 {
+   background-image: url(../assets/images/projects/ideisk/12.45.2-min.jpg);
+ }
+.projects-image__13 {
+   background-image: url(../assets/images/projects/orkestr/12.8-min.jpg);
+ }
 
-
-
+.projects-image__14 {
+   background-image: url(../assets/images/projects/fleshmob/17.89-min.jpg);
+ }
 
 .projects-image__1,
 .projects-image__2,
@@ -777,7 +842,10 @@ z-index: 1;
 .projects-image__8,
 .projects-image__9,
 .projects-image__10,
- .projects-image__11 {
+.projects-image__11,
+.projects-image__12,
+.projects-image__13,
+.projects-image__14 {
   display: block;
   width: 110%;
   height: 110%;
@@ -799,7 +867,17 @@ z-index: 1;
 .projects-image__3,
 .projects-image__4,
 .projects-image__5,
-.projects-image__6 {
+.projects-image__6,
+ .projects-image__7,
+ .projects-image__8,
+ .projects-image__9,
+ .projects-image__10,
+ .projects-image__11,
+ .projects-image__12,
+ .projects-image__13,
+ .projects-image__14,
+ 
+ {
     width: 110%;
     height: 110%;
     overflow: hidden;
@@ -1114,7 +1192,7 @@ z-index: 1;
   text-align: center;
 
 }
-
+.footer__container ul:nth-child(1) li:nth-child(1),
 .footer__container ul:nth-child(2) li:nth-child(1),
 .footer__container ul:nth-child(3) li:nth-child(1),
 .footer__container ul:nth-child(4) li:nth-child(1) {
@@ -1183,13 +1261,19 @@ z-index: 1;
 }
 
 .video-section {
- margin: 50px 25%;
- padding: 0;
+ position: relative;
+ padding-bottom: 40.25%;
+ padding-top: 30px; 
+ height: 0;
+ overflow: hidden;
 }
 
 .video-section iframe {
-  margin: 0 5%;
-  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
 }
 
 .slide_viewer {
@@ -1463,7 +1547,7 @@ z-index: 1;
   background-image: url(../assets/images/projects/chast-getsby/19.03.jpg)
 }
 .chast-getsby:nth-of-type(5) {
-  background-image: url(../assets/images/projects/chast-getsby/19.04-min.jpg)
+  background-image: url(../assets/images/projects/chast-getsby/19.04.2-min.jpg)
 }
 .chast-getsby:nth-of-type(6) {
   background-image: url(../assets/images/projects/chast-getsby/19.05-min.jpg)
@@ -1474,6 +1558,17 @@ z-index: 1;
 .chast-getsby:nth-of-type(8) {
   background-image: url(../assets/images/projects/chast-getsby/20.07-min.jpg)
 }
+
+.bibio-night:nth-of-type(1) {
+background-image: url(../assets/images/projects/biblio-night/12.1-min.jpeg)
+}
+.bibio-night:nth-of-type(2) {
+background-image: url(../assets/images/projects/biblio-night/12.2-min.jpeg)
+}
+.bibio-night:nth-of-type(3) {
+background-image: url(../assets/images/projects/biblio-night/12.3-min.jpeg)
+}
+
 
 .slide_buttons {
   left: 0;
